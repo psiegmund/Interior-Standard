@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Work+Sans:wght@100;300;400;500;600&display=swap');
+
+/* ASSETS
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f 
+
+https://www.youtube.com/watch?v=GI71fXmRrLM
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: 2.5rem;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+.standard {
+    text-align: left;
+    line-height: 2;
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 1rem;
+    word-spacing: 1.4rem;
+}
+
+/* ======================
+Header Styling
+========================= */
+
+
+#header section {
+    display: flex;
+    align-items: center;
+}
+
+#header div:first-child {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#header div:last-child {
+    justify-self: right;
+}
+
+#header section div h1 {
+    margin: 30px;
+}
+
+#header div>img {
+    /* height: 90vh; */
+    width: 52vw;
+}
+
+/* ----------NAVIGATION */
+
+#main nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2e2e2e;
+    color: #fff;
+    height: 10vh;
+    width: 100%;
+}
+
+#main nav ul {
+    font-size: 2rem;
+    display: flex;
+    list-style: none;
+    gap: 12vw;
+    margin: 0 5vw 0 0;
+}
+
+#main nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main nav ul li a:hover {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+
+/* ======================
+Main Styling
+========================= */
+
+/* --------- Section ourStory */
+#ourStory {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 15vh 0;
+}
+
+#ourStory img {
+    width: 50vw;
+}
+
+#ourStory div:last-child {
+    width: 49vw;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#ourStory p {
+    text-align: justify;
+}
+
+/* ---------Section featured */
+
+#featured {
+    padding: 20vh 0;
+}
+
+#featured article {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#featured article p {
+    line-height: 2;
+    text-align: left;
+}
+
+#featured h3 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#featured div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 10vh 0;
+}
+
+#featured div figure img {
+    width: 25vw;
+}
+
+#featured iframe {
+    display: block;
+    margin: 0 auto;
+    width: 30vw;
+    height: 315px;
+}
+
+#featured figcaption {
+    color: gray;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    width: 95%;
+}
+
+/* -------Section getInTouch */
+
+#getInTouch {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 30vh 5vw 10vh;
+}
+
+#getInTouch div {
+    width: 40%;
+}
+
+#getInTouch div p {
+    text-align: justify;
+    margin: 40px 0;
+}
+
+/* -------contact form */
+
+#contactForm {
+    margin: 0 0 0 10vw;
+}
+
+#contactForm input {
+    display: block;
+    width: 20vw;
+    margin: 0 0 7vh;
+    padding: 0.8rem;
+}
+
+#contactForm label {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+}
+
+#contactForm button {
+    padding: 10px;
+}
+
+/* ======================
+Footer Styling
+========================= */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background-color: #1d2c2f;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+}
+
+#footer ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+/* ======================
+Media Queries
+========================= */
+
+@media only screen and (max-width:600px) {
+    #header h1 {
+        letter-spacing: 0;
+    }
+
+    #header h2 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    #main nav ul {
+        gap: 30px;
+    }
+
+    #ourStory {
+        display: block;
+        text-align: center;
+    }
+
+    #ourStory div:last-child {
+        width: auto;
+        margin-top: 20px;
+    }
+
+    #featured {
+        padding: 20vh 0 0 0;
+    }
+
+    #featured div {
+        display: block;
+        text-align: center;
+    }
+
+    #featured div figure img {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    #featured iframe {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #getInTouch {
+        display: block;
+        padding: 10vh 5vw 10vh 5vw;
+    }
+
+    #getInTouch div {
+        width: auto;
+    }
+
+    #contactForm input {
+        width: 70vw;
+    }
+
+    #footer {
+        display: block;
+    }
+
+    #footer p {
+        display: inline;
+        font-size: 1rem;
+    }
+}
