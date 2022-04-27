@@ -4,10 +4,7 @@ let inputMsg = document.getElementById('input-text');
 
 
 function submitForm() {
-    let firstname = inputFirstname.value;
-    let email = inputEmail.value;
-    let msg = inputMsg.value;
-    console.log(firstname);
-    console.log(email);
-    console.log(msg);
+    console.log(inputFirstname.value);
+    console.log(inputEmail.value);
+    console.log(inputMsg.value);
 }
